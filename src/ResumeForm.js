@@ -11,8 +11,8 @@ const ResumeForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Assuming you have a backend API endpoint for resume parsing
-    const apiUrl = "YOUR_BACKEND_API_URL";
+    // Backend API endpoint for resume parsing
+    const apiUrl = "BACKEND_API_URL";
 
     const formData = new FormData();
     formData.append("resume", resumeFile);
