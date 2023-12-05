@@ -11,19 +11,19 @@ const Services = () => {
         <div className="services_container">
           <div className="services_container_des">
             <img src={fileFormat} />
-            <p>Accpets Multiple File Formats</p>
+            <p>ACCEPTS MUTIPLE FILE FORMATES</p>
           </div>
           <div className="services_container_des">
             <img src={resume} />
-            <p>Extracts Resume Data</p>
+            <p>EXTRACTS RESUME DATA</p>
           </div>
           <div className="services_container_des">
             <img src={summary} />
-            <p>Provide Brief Summary Of Resume</p>
+            <p>PROVIDE BRIEF SUMMARY OF RESUME</p>
           </div>
           <div className="services_container_des">
             <img src={ranking} />
-            <p>Ranks Resumes Based On Matching</p>
+            <p>RANKS RESUME BASED ON MATCHING</p>
           </div>
         </div>
       </div>

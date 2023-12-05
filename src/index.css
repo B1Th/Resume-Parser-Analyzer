@@ -50,6 +50,7 @@ li a:hover {
 }
 .landing_des {
   height: 78vh;
+  width: 100%;
   flex: 1 1 600px;
   padding-bottom: 1.5rem;
   position: relative;
@@ -88,6 +89,44 @@ li a:hover {
 }
 .landing_des_content a:hover {
   background-color: #0b7dda;
+}
+.landing_img img {
+  height: 500px;
+  width: 770px;
+}
+
+/* Services */
+
+.services {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.services_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services_container_des {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.services_container_des img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  width: 230px;
+}
+.services_container_des p {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 /* Parsing Conatiner */
@@ -175,33 +214,7 @@ body::after {
   text-align: center;
   font-size: 14px;
   padding: 2rem;
+  color: #ffff;
   background-color: #0056b3;
   overflow: hidden;
-}
-
-/* Services */
-
-.services {
-  margin-top: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.services_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.services_container_des {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.services_container_des img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 300px;
-  width: 310px;
 }
