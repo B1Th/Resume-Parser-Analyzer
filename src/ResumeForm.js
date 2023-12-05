@@ -36,18 +36,20 @@ const ResumeForm = () => {
   };
 
   return (
-    <div className="parsing_container">
-      <h1>Resume Parser</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="resume">Upload Resume:</label>
-        <input
-          type="file"
-          id="resume"
-          accept=".pdf,.doc,.docx"
-          onChange={handleFileChange}
-        />
-        <button type="submit">Parse Resume</button>
-      </form>
+    <div className="parsing_container" id="gotoparser">
+      <div className="parsing_container_content">
+        <h1>Resume Parser</h1>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="resume">Upload Resume:</label>
+          <input
+            type="file"
+            id="resume"
+            accept=".pdf,.doc,.docx"
+            onChange={handleFileChange}
+          />
+          <button type="submit">Parse Resume</button>
+        </form>
+      </div>
     </div>
   );
 };

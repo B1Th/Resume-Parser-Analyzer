@@ -1,20 +1,17 @@
-body {
-  font-family: "Arial", sans-serif;
-  background: linear-gradient(45deg, #222, #444);
+* {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-.app {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+html {
+  scroll-behavior: smooth;
+}
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #ffff;
 }
 
 /* navbar */
@@ -24,26 +21,7 @@ body {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
-.navbar a {
-  text-decoration: none;
-  color: #ffff;
-}
-.navbar .logo_img {
-  margin: 1rem 0 0 2rem;
-  max-width: 3rem;
-  cursor: pointer;
-}
-.navbar h2 {
-  padding: 14px 16px;
-}
-.navbar h2:hover {
-  cursor: pointer;
-  color: #ddd8d8;
+  color: #fff;
 }
 .navbar ul {
   display: flex;
@@ -57,38 +35,98 @@ li a {
 }
 
 li a:hover {
-  color: #d6cece;
+  color: #0b7dda;
+}
+
+/* landing */
+
+.landing {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  color: #ffff;
+}
+.landing_des {
+  height: 78vh;
+  flex: 1 1 600px;
+  padding-bottom: 1.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.landing_des_content {
+  display: block;
+}
+.landing_des_content h1 {
+  font-size: 3rem;
+  padding: 6rem 8rem 1.5rem;
+}
+.gradient-text {
+  color: #70e988;
+}
+.landing_des_content p {
+  padding: 0 8rem 2.3rem;
+}
+.landing_des_content .btn {
+  padding: 1rem 8rem;
+}
+.landing_des_content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 14em;
+  font-size: 20px;
+  padding: 2rem 2.5rem;
+  border-radius: 6px;
+  background-color: #2196f3;
+}
+.landing_des_content a:hover {
+  background-color: #0b7dda;
 }
 
 /* Parsing Conatiner */
 
 .parsing_container {
-  border: 1px solid #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin-top: 6.9rem;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-  position: relative;
+  background-color: rgb(73, 121, 167);
   z-index: 1;
 }
-
-h1 {
+.parsing_container_content {
+  width: 50%;
+  padding: 4rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+.parsing_container h1 {
   text-align: center;
-  color: #fff;
+  color: #ffff;
+  margin-bottom: 1rem;
 }
 
-form {
+.parsing_container form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-label {
+.parsing_container label {
   margin-bottom: 10px;
   font-weight: bold;
   color: #333;
 }
 
-input[type="file"] {
+.parsing_container input[type="file"] {
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
@@ -97,7 +135,7 @@ input[type="file"] {
   color: #333;
 }
 
-button {
+.parsing_container button {
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -107,7 +145,7 @@ button {
   font-size: 16px;
 }
 
-button:hover {
+.parsing_container button:hover {
   background-color: #0056b3;
 }
 
@@ -130,5 +168,40 @@ body::before {
 
 body::after {
   background: radial-gradient(circle at top left, #0056b3, #00ffea);
-  clip-path: ellipse(70% 100% at 50% 0%);
+  clip-path: ellipse(80% 100% at 50% 0%);
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 2rem;
+  background-color: #0056b3;
+  overflow: hidden;
+}
+
+/* Services */
+
+.services {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services_container_des {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.services_container_des img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 310px;
 }
