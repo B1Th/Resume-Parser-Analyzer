@@ -1,27 +1,44 @@
-import React from "react";
+import React, { useEffect } from "react";
 import fileFormat from "./images/fileformat.png";
 import resume from "./images/resume.png";
 import summary from "./images/summary.png";
 import ranking from "./images/ranking.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Services = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000, once: true });
+  }, []);
   return (
     <>
       <div className="services">
         <div className="services_container">
-          <div className="services_container_des">
+          <div className="services_container_des" data-aos="fade-right">
             <img src={fileFormat} />
-            <p>ACCEPTS MUTIPLE FILE FORMATES</p>
+            <p>ACCEPTS MULTIPLE FILE FORMATES</p>
           </div>
-          <div className="services_container_des">
+          <div
+            className="services_container_des"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <img src={resume} />
             <p>EXTRACTS RESUME DATA</p>
           </div>
-          <div className="services_container_des">
+          <div
+            className="services_container_des"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
             <img src={summary} />
             <p>PROVIDE BRIEF SUMMARY OF RESUME</p>
           </div>
-          <div className="services_container_des">
+          <div
+            className="services_container_des"
+            data-aos="fade-right"
+            data-aos-delay="700"
+          >
             <img src={ranking} />
             <p>RANKS RESUME BASED ON MATCHING</p>
           </div>

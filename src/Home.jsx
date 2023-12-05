@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import landing from "./images/landing.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000, once: true });
+  }, []);
   return (
     <>
       <div className="landing">
         <div className="landing_des">
-          <div className="landing_des_content">
+          <div className="landing_des_content" data-aos="fade-right">
             <h1>
               Resume parsing <br />
               <span className="gradient-text">simplified </span>using{" "}
@@ -22,7 +27,7 @@ const Home = () => {
           </div>
         </div>
         <div className="landing_des">
-          <div className="landing_img">
+          <div className="landing_img" data-aos="fade-left">
             <img src={landing} />
           </div>
         </div>
