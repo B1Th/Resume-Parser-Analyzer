@@ -8,6 +8,9 @@ const ResumeForm = () => {
   }, []);
   return (
     <div className="parsing_container" id="gotoparser">
+      <h1>
+        Start Using Our <span className="gradient-text">Service</span>
+      </h1>
       <div className="parsing_container_content" data-aos="fade-up">
         <h1>Resume Parser</h1>
         <form>

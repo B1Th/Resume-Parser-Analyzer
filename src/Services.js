@@ -13,7 +13,7 @@ const Services = () => {
   return (
     <>
       <div className="services">
-        <h1>
+        <h1 data-aos="fade-left">
           What Are <span className="gradient-text">Our</span> Features?
         </h1>
         <div className="services_container">
