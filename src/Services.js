@@ -12,7 +12,7 @@ const Services = () => {
   }, []);
   return (
     <>
-      <div className="services">
+      <div className="services" id="gotolearn">
         <h1 data-aos="fade-left">
           What Are <span className="gradient-text">Our</span> Features?
         </h1>

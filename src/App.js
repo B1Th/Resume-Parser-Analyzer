@@ -1,19 +1,23 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
-import Services from "./Services";
-import ResumeForm from "./ResumeForm";
+import Navbar from "./Navbar";
+import Parser from "./Parser";
+import Ranking from "./Ranking";
 import Footer from "./Footer";
 
 const App = () => {
   return (
     <div className="app">
-      <Navbar />
-      <Home />
-      <Services />
-      <ResumeForm />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/parser" element={<Parser />} />
+          <Route path="/ranking" element={<Ranking />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 };
