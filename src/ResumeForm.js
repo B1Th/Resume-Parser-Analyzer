@@ -6,53 +6,13 @@ const ResumeForm = () => {
   useEffect(() => {
     Aos.init({ duration: 2000, once: true });
   }, []);
-
-  const [resumeFile, setResumeFile] = useState(null);
-
-  const handleFileChange = (event) => {
-    const file = event.target.files[0];
-    setResumeFile(file);
-  };
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    // Backend API endpoint for resume parsing
-    const apiUrl = "http://localhost:5000/parseResume";
-
-    const formData = new FormData();
-    formData.append("resume", resumeFile);
-
-    try {
-      const response = await fetch(apiUrl, {
-        method: "POST",
-        body: formData,
-      });
-
-      if (response.ok) {
-        const result = await response.json();
-        // Process the parsed resume data
-        console.log(result);
-      } else {
-        console.error("Failed to parse resume");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-    }
-  };
-
   return (
     <div className="parsing_container" id="gotoparser">
       <div className="parsing_container_content" data-aos="fade-up">
         <h1>Resume Parser</h1>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="resume">Upload Resume:</label>
-          <input
-            type="file"
-            id="resume"
-            accept=".pdf,.doc,.docx"
-            onChange={handleFileChange}
-          />
+        <form>
+          <label>Upload Resume:</label>
+          <input type="file" id="resume" accept=".pdf,.doc,.docx" />
           <button type="submit">Parse Resume</button>
         </form>
       </div>

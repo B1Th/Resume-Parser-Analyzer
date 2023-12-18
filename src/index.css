@@ -52,7 +52,6 @@ li a:hover {
   height: 78vh;
   width: 100%;
   flex: 1 1 600px;
-  padding-bottom: 1.5rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -95,6 +94,33 @@ li a:hover {
   width: 770px;
 }
 
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .landing_des {
+    height: auto;
+  }
+
+  .landing_des_content h1 {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  .landing_des_content p {
+    padding: 0 2rem 1rem;
+  }
+
+  .landing_des_content .btn {
+    padding: 1rem 2rem;
+  }
+
+  .landing_img img {
+    height: auto;
+    position: relative;
+    right: 0;
+    width: 100%;
+  }
+}
+
 /* Services */
 
 .services {
@@ -127,6 +153,26 @@ li a:hover {
 .services_container_des p {
   font-size: 14px;
   font-weight: bold;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .services {
+    margin-top: 5rem;
+  }
+  .services_container {
+    flex-direction: column;
+  }
+
+  .services_container_des img {
+    height: 220px;
+    width: 230px;
+  }
+
+  .services_container_des p {
+    font-size: 12px;
+    margin-bottom: 2rem;
+  }
 }
 
 /* Parsing Conatiner */
@@ -186,6 +232,24 @@ li a:hover {
 
 .parsing_container button:hover {
   background-color: #0056b3;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .parsing_container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .parsing_container_content {
+    width: 80%;
+    padding: 2rem;
+    margin: 8rem 0;
+  }
+
+  .parsing_container button {
+    font-size: 14px;
+  }
 }
 
 /* Background Shapes */
