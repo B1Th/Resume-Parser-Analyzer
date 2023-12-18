@@ -126,9 +126,14 @@ li a:hover {
 .services {
   margin-top: 10rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+.services h1 {
+  font-size: 2.5rem;
+  margin: 2.5rem 0;
 }
 .services_container {
   width: 100%;
@@ -159,6 +164,9 @@ li a:hover {
 @media (max-width: 768px) {
   .services {
     margin-top: 5rem;
+  }
+  .services h1 {
+    font-size: 1.5rem;
   }
   .services_container {
     flex-direction: column;

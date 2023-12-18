@@ -13,9 +13,12 @@ const Services = () => {
   return (
     <>
       <div className="services">
+        <h1>
+          What Are <span className="gradient-text">Our</span> Features?
+        </h1>
         <div className="services_container">
           <div className="services_container_des" data-aos="fade-right">
-            <img src={fileFormat} />
+            <img src={fileFormat} alt="Pic1" />
             <p>ACCEPTS MULTIPLE FILE FORMATES</p>
           </div>
           <div
@@ -23,7 +26,7 @@ const Services = () => {
             data-aos="fade-right"
             data-aos-delay="300"
           >
-            <img src={resume} />
+            <img src={resume} alt="Pic2" />
             <p>EXTRACTS RESUME DATA</p>
           </div>
           <div
@@ -31,7 +34,7 @@ const Services = () => {
             data-aos="fade-right"
             data-aos-delay="500"
           >
-            <img src={summary} />
+            <img src={summary} alt="Pic3" />
             <p>PROVIDE BRIEF SUMMARY OF RESUME</p>
           </div>
           <div
@@ -39,7 +42,7 @@ const Services = () => {
             data-aos="fade-right"
             data-aos-delay="700"
           >
-            <img src={ranking} />
+            <img src={ranking} alt="Pic4" />
             <p>RANKS RESUME BASED ON MATCHING</p>
           </div>
         </div>
