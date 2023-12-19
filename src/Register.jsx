@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Register = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000, once: true });
+  }, []);
   return (
     <>
-      <div className="register">
+      <div className="register" data-aos="fade-left">
         <form>
           <div class="register_form">
             <h1>Register</h1>
