@@ -277,6 +277,189 @@ li a:hover {
   }
 }
 
+/* Login */
+
+.login {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7rem;
+  align-items: center;
+  color: #fff;
+}
+.login_container {
+  width: 30%;
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  gap: 2rem;
+}
+.login_container h1 {
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+.login_form {
+  width: 100%;
+}
+.login_form_content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.login_form_content input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+.login_form_content input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 3px solid #555;
+}
+.login_form_content .check {
+  display: flex;
+  gap: 1rem;
+}
+.login_form_content button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #04aa6d;
+  opacity: 0.9;
+  transition: 0.5s;
+  color: #fff;
+  font-size: 1rem;
+  margin: 0.7rem 0;
+  border: none;
+}
+.login_form_content button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.login_form_content p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.8rem;
+}
+.login_form_content a {
+  color: #0056b3;
+  font-weight: 520;
+}
+
+@media (max-width: 768px) {
+  .login_container {
+    width: 75%;
+  }
+  .login_form {
+    font-size: 0.9rem;
+  }
+  .login_form_content input[type="email"],
+  input[type="password"] {
+    padding: 8px 15px;
+  }
+  .login_form_content button {
+    padding: 0.6rem;
+  }
+  .login_form_content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Register */
+
+.register {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.register form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register_form {
+  width: 80%;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+.register_form h4 {
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.register_form input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+.register_form input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 3px solid #555;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.register_form p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.7rem 0;
+  gap: 0.8rem;
+}
+
+.registerbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  margin: 0.7rem 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+.register_form a {
+  color: #0056b3;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .register_form h4 {
+    font-size: 0.9rem;
+  }
+  .register_form p {
+    font-size: 0.9rem;
+  }
+}
+
 /* Background Shapes */
 body::before,
 body::after {
