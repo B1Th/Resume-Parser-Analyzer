@@ -18,10 +18,9 @@ const Navbar = () => {
             <Link to="/ranking">Ranking</Link>
           </li>
           <li>
-            <Link to="/login">Login</Link>
-          </li>
-          <li>
-            <Link to="/register">Register</Link>
+            <Link to="/login" className="signin">
+              Login
+            </Link>
           </li>
         </ul>
       </nav>
