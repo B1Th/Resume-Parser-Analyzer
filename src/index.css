@@ -32,11 +32,11 @@ a {
   text-transform: capitalize;
 }
 .navbar .signin {
-  background-color: #04ba77;
+  background-color: #2196f3;
   border-radius: 1rem;
 }
 .navbar .signin:hover {
-  background-color: #04a067;
+  background-color: #0b7dda;
   color: #fff;
 }
 .navbar li a {
@@ -207,28 +207,53 @@ li a:hover {
 /* Testimonials */
 
 .testimonial {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial_box {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #fff;
+  padding: 3rem 0;
+  border-radius: 1rem;
+  background: radial-gradient(circle at top left, #0056b3, #00ffea);
+}
+
+.testimonial_box h1 {
+  font-size: 2.5rem;
+  width: 30%;
+  padding: 0 1rem 0 7rem;
 }
 
 .testimonial_container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 20px;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
 }
 
 .testimonial_container_content {
   border: 1px solid #ddd;
-  padding: 20px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
   max-width: 300px;
-  width: 100%;
-  margin: 10px;
+  margin: auto;
   box-shadow: 0 0 15px rgba(12, 116, 200, 0.4);
 }
 
 .testimonial_image {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
   border-radius: 50%;
   margin-bottom: 10px;
 }
@@ -243,17 +268,23 @@ li a:hover {
 
 /* Media Query for Smaller Screens */
 @media only screen and (max-width: 768px) {
-  .testimonial h1 {
-    font-size: 1.5rem;
+  .testimonial_box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .testimonial_image {
+    max-width: 100px;
+  }
+  .testimonial_box h1 {
+    font-size: 2rem;
+    width: 100%;
+    padding: 0 1rem;
   }
   .testimonial_container {
-    flex-direction: column;
-    align-items: center;
+    max-width: 300px;
   }
-
   .testimonial_container_content {
-    font-size: 12px;
-    max-width: 65%;
+    max-width: 80%;
   }
 }
 
