@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Resume-Parser-Analyzer/static/css/main.7844c170.css",
+    "main.js": "/Resume-Parser-Analyzer/static/js/main.dcd06df8.js",
+    "static/media/landing.png": "/Resume-Parser-Analyzer/static/media/landing.f2456d93143942c3ca49.png",
+    "static/media/fileformat.png": "/Resume-Parser-Analyzer/static/media/fileformat.7ce1f67bd6feee8ff984.png",
+    "static/media/ranking.png": "/Resume-Parser-Analyzer/static/media/ranking.91b39737a0d4b177a213.png",
+    "static/media/summary.png": "/Resume-Parser-Analyzer/static/media/summary.3d3ea2edf3160118a642.png",
+    "static/media/resume.png": "/Resume-Parser-Analyzer/static/media/resume.ba1362ec3875166ab0bf.png",
+    "static/media/slick.svg": "/Resume-Parser-Analyzer/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Resume-Parser-Analyzer/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Resume-Parser-Analyzer/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Resume-Parser-Analyzer/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Resume-Parser-Analyzer/index.html",
+    "main.7844c170.css.map": "/Resume-Parser-Analyzer/static/css/main.7844c170.css.map",
+    "main.dcd06df8.js.map": "/Resume-Parser-Analyzer/static/js/main.dcd06df8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7844c170.css",
+    "static/js/main.dcd06df8.js"
+  ]
+}
