@@ -228,6 +228,7 @@ li a:hover {
 .testimonial_box h1 {
   font-size: 2.5rem;
   width: 30%;
+  border-right: 3px solid #fff;
   padding: 0 1rem 0 7rem;
 }
 
@@ -279,6 +280,7 @@ li a:hover {
     font-size: 2rem;
     width: 100%;
     padding: 0 1rem;
+    border: none;
   }
   .testimonial_container {
     max-width: 300px;
@@ -438,8 +440,7 @@ input[type="password"]:focus {
 .login_form_content button {
   width: 100%;
   padding: 0.8rem;
-  background-color: #04aa6d;
-  opacity: 0.9;
+  background-color: #0f83e3;
   transition: 0.5s;
   color: #fff;
   font-size: 1rem;
@@ -447,7 +448,7 @@ input[type="password"]:focus {
   border: none;
 }
 .login_form_content button:hover {
-  opacity: 1;
+  background-color: #0b7dda;
   cursor: pointer;
 }
 .login_form_content p {
@@ -534,18 +535,18 @@ hr {
 }
 
 .registerbtn {
-  background-color: #04aa6d;
+  background-color: #0f83e3;
   color: white;
   padding: 16px 20px;
   margin: 0.7rem 0;
   border: none;
   cursor: pointer;
   width: 100%;
-  opacity: 0.9;
+  transition: 0.5s;
 }
 
 .registerbtn:hover {
-  opacity: 1;
+  background-color: #0b7dda;
 }
 
 .register_form a {

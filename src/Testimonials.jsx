@@ -26,7 +26,7 @@ const testimonialsData = [
   },
 ];
 
-const Testimoni = ({ author, text, image, animation, delay }) => (
+const Testimoni = ({ author, text, image }) => (
   <div className="testimonial_container_content">
     <img className="testimonial_image" src={image} alt={`${author}'s avatar`} />
     <p className="testimonial_text">{text}</p>
