@@ -4,25 +4,35 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import bhuwan from "./images/bhuwan.JPG";
+import debendra from "./images/debendra.JPG";
+import ganesh from "./images/ganesh.JPG";
+import saroj from "./images/saroj.JPG";
 
 const testimonialsData = [
   {
     id: 1,
-    author: "John Doe",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "https://placekitten.com/150/150",
+    author: "Bhuwan Thapa",
+    text: "Your resume, our code - a perfect match.",
+    image: bhuwan,
   },
   {
     id: 2,
-    author: "Jane Smith",
-    text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: "https://placekitten.com/151/151",
+    author: "Debendra Pun",
+    text: "In the world of resumes, let our code be your guiding light.",
+    image: debendra,
   },
   {
     id: 3,
-    author: "Bob Johnson",
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    image: "https://placekitten.com/152/152",
+    author: "Ganesh Gautam",
+    text: "Unleash the power of code to decode resumes effortlessly.",
+    image: ganesh,
+  },
+  {
+    id: 4,
+    author: "Saroj Paudel",
+    text: "Elevating HR tech with intelligent resume parsing solutions.",
+    image: saroj,
   },
 ];
 
@@ -53,7 +63,7 @@ const Testimonials = () => {
         <div className="testimonial_box" data-aos="fade-up">
           <h1>
             <span className="gradient-text">Hear</span> From Our
-            <span className="gradient-text"> Clients</span>
+            <span className="gradient-text"> Team</span>
           </h1>
           <div className="testimonial_container">
             <Slider {...sliderSettings}>
